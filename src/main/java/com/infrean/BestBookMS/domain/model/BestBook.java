@@ -12,8 +12,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter @Setter
 public class BestBook {
 
-//    @Id
-//    private String id;
+  @Id
+    private String id;
 
     private Item item;
     private Long rentCount;
