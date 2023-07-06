@@ -1,4 +1,4 @@
-package com.infrean.BestBookMS.domain.model.vo;
+package com.inflean.BestBookMS.domain.model.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

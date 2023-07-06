@@ -1,4 +1,4 @@
-package com.infrean.BestBookMS;
+package com.inflean.BestBookMS;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,6 @@
-package com.infrean.BestBookMS.domain.model;
+package com.inflean.BestBookMS.domain.model;
 
-import com.infrean.BestBookMS.domain.model.vo.Item;
+import com.inflean.BestBookMS.domain.model.vo.Item;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

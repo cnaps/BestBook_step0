@@ -1,4 +1,4 @@
-package com.infrean.BestBookMS;
+package com.inflean.BestBookMS;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

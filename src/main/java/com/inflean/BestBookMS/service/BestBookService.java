@@ -1,7 +1,7 @@
-package com.infrean.BestBookMS.service;
+package com.inflean.BestBookMS.service;
 
-import com.infrean.BestBookMS.domain.model.BestBook;
-import com.infrean.BestBookMS.repository.BestBookRepository;
+import com.inflean.BestBookMS.domain.model.BestBook;
+import com.inflean.BestBookMS.repository.BestBookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
