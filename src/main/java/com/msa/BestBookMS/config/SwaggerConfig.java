@@ -1,4 +1,4 @@
-package com.inflean.BestBookMS.config;
+package com.msa.BestBookMS.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

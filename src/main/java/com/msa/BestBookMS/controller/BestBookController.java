@@ -1,7 +1,7 @@
-package com.inflean.BestBookMS.controller;
+package com.msa.BestBookMS.controller;
 
-import com.inflean.BestBookMS.service.BestBookService;
-import com.inflean.BestBookMS.domain.model.BestBook;
+import com.msa.BestBookMS.service.BestBookService;
+import com.msa.BestBookMS.domain.model.BestBook;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

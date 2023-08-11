@@ -1,7 +1,8 @@
-package com.inflean.BestBookMS.service;
+package com.msa.BestBookMS.service;
 
-import com.inflean.BestBookMS.domain.model.BestBook;
-import com.inflean.BestBookMS.repository.BestBookRepository;
+import com.msa.BestBookMS.domain.model.BestBook;
+import com.msa.BestBookMS.domain.model.vo.Item;
+import com.msa.BestBookMS.repository.BestBookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +13,6 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class BestBookService {
     private final BestBookRepository bookRepository;
-
 
     public List<BestBook> getAllBooks() {
         return bookRepository.findAll();
@@ -44,5 +44,15 @@ public class BestBookService {
             return true;
         }
         return false;
+    }
+
+    public void dealBestBook(Item item){
+        BestBook bestBookByItem = bookRepository.findBestBookByItem(item);
+        if (bestBookByItem != null){
+            bestBookByItem.increseBestBookCount();
+        } else {
+           bestBookByItem =  createBook(BestBook.registerBestBook(item));
+        }
+        bookRepository.save(bestBookByItem);
     }
 }
