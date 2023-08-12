@@ -16,7 +16,7 @@ public class SwaggerConfig {
                 .useDefaultResponseMessages(true) // Swagger 에서 제공해주는 기본 응답 코드를 표시할 것이면 true
                 .select()
                 .apis(RequestHandlerSelectors.any())
-                .apis(RequestHandlerSelectors.basePackage("com.inflean.BestBookMS.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.msa.BestBookMS.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
