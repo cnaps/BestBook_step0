@@ -17,7 +17,7 @@ public class BestBook {
 
 static UUID uuid = UUID.randomUUID();
 
-    @Id
+@Id
 private String id;
 
 private Item item;
