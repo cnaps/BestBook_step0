@@ -32,6 +32,7 @@ public static BestBook registerBestBook(Item item){
 }
 
 public Long increseBestBookCount(){
-        return  this.getRentCount() + 1;
+        this.rentCount = this.getRentCount() +1 ;
+        return  this.rentCount;
     }
 }
