@@ -1,8 +1,8 @@
-package com.msa.BestBookMS.service;
+package com.msa.BestBookMS.domain;
 
 import com.msa.BestBookMS.domain.model.BestBook;
 import com.msa.BestBookMS.domain.model.vo.Item;
-import com.msa.BestBookMS.repository.BestBookRepository;
+import com.msa.BestBookMS.persistence.BestBookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

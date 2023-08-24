@@ -1,4 +1,4 @@
-package com.msa.BestBookMS.repository;
+package com.msa.BestBookMS.persistence;
 
 import com.msa.BestBookMS.domain.model.BestBook;
 import com.msa.BestBookMS.domain.model.vo.Item;

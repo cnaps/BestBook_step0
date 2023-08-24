@@ -1,4 +1,4 @@
-package com.msa.BestBookMS.controller;
+package com.msa.BestBookMS.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.msa.BestBookMS.domain.model.evnet.ItemRented;

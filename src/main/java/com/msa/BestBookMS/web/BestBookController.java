@@ -1,4 +1,4 @@
-package com.msa.BestBookMS.controller;
+package com.msa.BestBookMS.web;
 
 import com.msa.BestBookMS.service.BestBookService;
 import com.msa.BestBookMS.domain.model.BestBook;
