@@ -12,11 +12,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter @Setter
 public class BestBook {
-
-static UUID uuid = UUID.randomUUID();
-
 @Id
 private String id;
 
@@ -24,6 +20,7 @@ private Item item;
 private Long rentCount;
 
 public static BestBook registerBestBook(Item item){
+    UUID uuid = UUID.randomUUID();
     var bestBook = new BestBook();
     bestBook.setId(uuid.toString());
     bestBook.setItem(item);

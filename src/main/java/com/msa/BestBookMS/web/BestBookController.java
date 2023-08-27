@@ -1,6 +1,6 @@
 package com.msa.BestBookMS.web;
 
-import com.msa.BestBookMS.service.BestBookService;
+import com.msa.BestBookMS.domain.BestBookService;
 import com.msa.BestBookMS.domain.model.BestBook;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
