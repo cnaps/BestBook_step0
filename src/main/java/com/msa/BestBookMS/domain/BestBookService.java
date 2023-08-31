@@ -22,11 +22,17 @@ public class BestBookService {
         return bookRepository.findById(id);
     }
 
-    public BestBook createBook(BestBook book) {
-        return bookRepository.save(book);
+    public void dealBestBook(Item item){
+        BestBook bestBook = bookRepository.findBestBookByItem(item);
+        if (bestBook != null){
+            bestBook.increseBestBookCount();
+        } else {
+            bestBook =  BestBook.registerBestBook(item);
+        }
+        saveBook(bestBook);
     }
 
-    public BestBook updateBook(String id, BestBook book) {
+   public BestBook updateBook(String id, BestBook book) {
         Optional<BestBook> existingBookOptional = bookRepository.findById(id);
         if (existingBookOptional.isPresent()) {
             BestBook existingBook = existingBookOptional.get();
@@ -46,13 +52,9 @@ public class BestBookService {
         return false;
     }
 
-    public void dealBestBook(Item item){
-        BestBook bestBookByItem = bookRepository.findBestBookByItem(item);
-        if (bestBookByItem != null){
-            bestBookByItem.increseBestBookCount();
-        } else {
-           bestBookByItem =  createBook(BestBook.registerBestBook(item));
-        }
-        bookRepository.save(bestBookByItem);
+    public BestBook saveBook(BestBook book) {
+        return bookRepository.save(book);
     }
+
+
 }

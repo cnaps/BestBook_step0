@@ -32,7 +32,7 @@ public class BestBookController {
 
     @PostMapping("/books")
     public ResponseEntity<BestBook> createBook(@RequestBody BestBook book) {
-        BestBook createdBook = bookService.createBook(book);
+        BestBook createdBook = bookService.saveBook(book);
         return new ResponseEntity<>(createdBook, HttpStatus.CREATED);
     }
 

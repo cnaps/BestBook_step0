@@ -1,8 +1,9 @@
 package com.msa.BestBookMS.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.msa.BestBookMS.domain.BestBookService;
 import com.msa.BestBookMS.domain.model.evnet.ItemRented;
-import com.msa.BestBookMS.service.BestBookService;
+
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
